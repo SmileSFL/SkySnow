@@ -14,7 +14,7 @@ public:
 
 protected:
 
-    unsigned  getExternalFormat(unsigned format);
+    unsigned getExternalFormat(unsigned format);
 
     unsigned getDataType(unsigned format);
 };

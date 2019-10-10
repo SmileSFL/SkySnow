@@ -15,7 +15,7 @@ public:
 
     void setViewSize(int width,int height);
 
-    void startMainThread();
+//    void startMainThread();
 
     void renderOneFrame();
 
@@ -41,5 +41,5 @@ private:
     int width_;
     int height_;
 
-    MainThread* mainThread_;
+//    MainThread* mainThread_;
 };

@@ -1,0 +1,16 @@
+Executable : /Users/liuqian8/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/Users/liuqian8/Desktop/SkySnow/Study/app
+-B/Users/liuqian8/Desktop/SkySnow/Study/app/.externalNativeBuild/cmake/release/armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-21
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/liuqian8/Desktop/SkySnow/Study/app/build/intermediates/cmake/release/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=Release
+-DANDROID_NDK=/Users/liuqian8/Library/Android/sdk/ndk-bundle
+-DCMAKE_CXX_FLAGS=-std=c++11
+-DCMAKE_TOOLCHAIN_FILE=/Users/liuqian8/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/liuqian8/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+-DANDROID_STL=c++_static
+jvmArgs : 
+

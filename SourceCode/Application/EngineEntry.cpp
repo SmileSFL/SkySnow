@@ -8,8 +8,7 @@ EngineEntry::EngineEntry(Context* context):
     exampleObject_(nullptr),
     isInitial_(false),
     width_(0),
-    height_(0),
-    mainThread_(nullptr)
+    height_(0)
 {
 }
 
@@ -27,11 +26,11 @@ EngineEntry::~EngineEntry()
         context_ = nullptr;
     }
 
-    if(mainThread_)
-    {
-        delete mainThread_;
-        mainThread_ = nullptr;
-    }
+//    if(mainThread_)
+//    {
+//        delete mainThread_;
+//        mainThread_ = nullptr;
+//    }
 }
 
 void EngineEntry::setViewSize(int width,int height)
@@ -40,15 +39,15 @@ void EngineEntry::setViewSize(int width,int height)
     height_ = height;
 }
 
-void EngineEntry::startMainThread()
-{
-
-    mainThread_ = new MainThread();
-
-    context_->setMainThread(mainThread_);
-
-    mainThread_->run();
-}
+//void EngineEntry::startMainThread()
+//{
+//
+//    mainThread_ = new MainThread();
+//
+//    context_->setMainThread(mainThread_);
+//
+//    mainThread_->run();
+//}
 
 void EngineEntry::renderOneFrame()
 {

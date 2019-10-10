@@ -24,7 +24,7 @@ JNI_METHOD(long ,startMainThread)(JNIEnv *env,jobject jobject1,jobject assetMana
     context->setSetAssetManager(mgr);
 
     EngineEntry* engineEntry = new EngineEntry(context);
-    engineEntry->startMainThread();
+//    engineEntry->startMainThread();
     return (uintptr_t)(engineEntry);
 }
 
@@ -55,8 +55,8 @@ JNI_METHOD(void,createSample)(JNIEnv *env,jobject jobject1,jlong classId)
 {
     EngineEntry* engineEntry = (EngineEntry*)(classId);
 
-//    engineEntry->createApplication<DeferredLight>();
-    engineEntry->createApplication<BaseSample>();
+    engineEntry->createApplication<DeferredLight>();
+//    engineEntry->createApplication<BaseSample>();
 }
 
 
